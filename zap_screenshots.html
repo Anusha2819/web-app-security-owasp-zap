@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZAP Project Screenshots</title>
+
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  background:#0a0e1a;
+  font-family:'JetBrains Mono', monospace;
+  padding:40px;
+}
+
+.title {
+  text-align:center;
+  font-size:28px;
+  color:#00d4b8;
+  font-family:'Rajdhani';
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.sub {
+  text-align:center;
+  color:#6b7fa3;
+  font-size:12px;
+  margin-bottom:40px;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.box {
+  background:#0d1117;
+  border-radius:10px;
+  border:1px solid #1e2d45;
+  padding:15px;
+}
+
+.heading {
+  color:#00d4b8;
+  font-family:'Rajdhani';
+  font-size:16px;
+  margin-bottom:10px;
+}
+
+.cmd {
+  color:#00d4b8;
+  font-size:13px;
+}
+
+.text {
+  color:#cfd8ff;
+  font-size:12px;
+  margin-top:8px;
+}
+
+.result {
+  margin-top:10px;
+  font-size:12px;
+  color:#00ff88;
+}
+</style>
+</head>
+
+<body>
+
+<div class="title">OWASP ZAP PROJECT — LINKEDIN SCREENSHOTS</div>
+<div class="sub">PERIKALA ANUSHA · KALI LINUX · OWASP ZAP · 2026</div>
+
+<div class="grid">
+
+<div class="box">
+<div class="heading">01 — Environment Setup</div>
+<div class="cmd">sudo apt update && sudo apt upgrade -y</div>
+<div class="text">
+• Installed dependencies & Java 17<br>
+• Configured Docker environment<br>
+• Prepared secure lab setup
+</div>
+<div class="result">✔ Ready for scanning</div>
+</div>
+
+<div class="box">
+<div class="heading">02 — Target Deployment</div>
+<div class="cmd">docker run -d -p 3000:3000 bkimminich/juice-shop</div>
+<div class="text">
+• Deployed vulnerable web app<br>
+• Legal target for testing<br>
+• Accessible on localhost
+</div>
+<div class="result">✔ Target application running</div>
+</div>
+
+<div class="box">
+<div class="heading">03 — ZAP Daemon Mode</div>
+<div class="cmd">zap.sh -daemon -port 8080</div>
+<div class="text">
+• Started ZAP in headless mode<br>
+• Enabled API-based scanning<br>
+• WSL-compatible setup
+</div>
+<div class="result">✔ ZAP ready for automation</div>
+</div>
+
+<div class="box">
+<div class="heading">04 — Spider Scan</div>
+<div class="cmd">/JSON/spider/action/scan</div>
+<div class="text">
+• Crawled application endpoints<br>
+• Discovered hidden URLs<br>
+• Built attack surface map
+</div>
+<div class="result">✔ URLs enumerated</div>
+</div>
+
+<div class="box">
+<div class="heading">05 — Active Scan</div>
+<div class="cmd">/JSON/ascan/action/scan</div>
+<div class="text">
+• Simulated real attacks<br>
+• Tested vulnerabilities<br>
+• Deep security analysis
+</div>
+<div class="result">✔ Vulnerabilities detected</div>
+</div>
+
+<div class="box">
+<div class="heading">06 — Passive Scan</div>
+<div class="cmd">/JSON/pscan/view/alerts</div>
+<div class="text">
+• Analyzed traffic silently<br>
+• Identified misconfigurations<br>
+• No active exploitation
+</div>
+<div class="result">✔ Safe analysis completed</div>
+</div>
+
+<div class="box">
+<div class="heading">07 — Python Automation</div>
+<div class="cmd">python3 zap_scan.py</div>
+<div class="text">
+• Automated full scan pipeline<br>
+• Integrated ZAP API<br>
+• Generated JSON reports
+</div>
+<div class="result">✔ End-to-end automation</div>
+</div>
+
+<div class="box">
+<div class="heading">08 — Report Generation</div>
+<div class="cmd">zap_report.html / .json</div>
+<div class="text">
+• Exported scan results<br>
+• Categorized vulnerabilities<br>
+• Structured reporting
+</div>
+<div class="result">✔ Reports generated</div>
+</div>
+
+</div>
+
+<br><br>
+
+<div class="box">
+<div class="heading">FINAL RESULT</div>
+<div class="text">
+✔ Target deployed securely<br>
+✔ Full scan automation completed<br>
+✔ OWASP Top 10 vulnerabilities tested<br>
+✔ Reports generated successfully
+</div>
+<div class="result">🚀 Complete Web App Security Testing using OWASP ZAP</div>
+</div>
+
+<br><br>
+
+<center>
+<button onclick="window.print()" style="padding:12px 30px;background:#00d4b8;border:none;border-radius:5px;font-weight:bold;">
+PRINT / SAVE AS PDF
+</button>
+</center>
+
+</body>
+</html>
